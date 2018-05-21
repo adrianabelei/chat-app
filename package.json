@@ -13,10 +13,11 @@
     "uuid": "^3.1.0"
   },
   "scripts": {
+    "react": "react-scripts start",
      "start": "node src/server/index.js",
 
     "dev": "concurrently 'npm run react' 'npm run server'",
-    "react": "react-scripts start",
+    
     "server": "nodemon src/server/index.js",
     "build": "react-scripts build",
     "styles": "node-sass --output-style compressed --include-path scss src/styles/index.scss src/index.css",
